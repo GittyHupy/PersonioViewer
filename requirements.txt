@@ -3,3 +3,4 @@ streamlit
 workalendar
 pandas
 python-dotenv
+openpyxl
