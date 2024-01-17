@@ -1,13 +1,19 @@
 import requests
+from dotenv import load_dotenv
+import os
+
 
 
 def authenticate():
-    # TODO: put keys in .env file!!
+    load_dotenv()
+    client_id = os.getenv("CLIENT_ID")
+    client_secret = os.getenv("CLIENT_SECRET")
+    
 
     url = "https://api.personio.de/v1/auth"
     payload = {
-        "client_id": "papi-9cecb510-8b07-44f6-b3ca-02dabe0615ae",
-        "client_secret": "papi-NGYwMjc2MGMtODBjYi00N2EyLThmNzItN2VhNGZjNDkzOTRh",
+        "client_id": client_id,
+        "client_secret": client_secret
     }
 
     response = requests.post(url, json=payload)

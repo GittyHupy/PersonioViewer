@@ -1,3 +1,5 @@
 ipykernel
 streamlit
 workalendar
+pandas
+python-dotenv
