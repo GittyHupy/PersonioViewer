@@ -10,6 +10,7 @@ Optionally create a virtual python environment:  `python -m venv venv` and activ
 
 Install the requirements `pip install -r requirements.txt`
 
+Start the venv `.\venv\Scripts\Activate.ps1 
 Launch the app `streamlit run app.py` (a browser window should pop up)
 
 ### API Access
